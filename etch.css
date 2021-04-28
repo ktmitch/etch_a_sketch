@@ -1,11 +1,24 @@
-#main {
-    grid-template-areas: "btn btn btn btn"
-                        "one two three four"
-                        "five six seven eight"
-                        "nine ten eleven twelve"
-                        "thirteen fourteen fifteen sixteen"
+#main-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-#button-clear {
-    grid-area: btn
+#main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%; */
 }
+
+.clearDivs {
+    background-color: white;
+}
+
+/* .allDivs:hover {
+    background-color: lightblue;
+    /* padding: 10px 15px;
+} */
