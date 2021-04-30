@@ -6,15 +6,18 @@ const allDivs = document.querySelectorAll("div")
 function create() {
     const newDiv = document.createElement('div')
     newDiv.classList.add("allDivs")
-    newDiv.textContent = "Herro"
+    // newDiv.textContent = " s"
+    newDiv.setAttribute('style', 'border: 1px black solid; width: 100%; height: 0; padding-bottom: 100%; margin: 0') //overflow hidden if adding content
     newDiv.addEventListener('mouseenter', () => {
-        newDiv.style.backgroundColor = 'blue'
+        newDiv.style.backgroundColor = 'lightblue'
     })
     main.appendChild(newDiv)
     console.log("Added")
 }
 
-for (i = 0; i < 257; i++) {
+var i = 0
+
+for (i ; i < 256; i++) {
     create()
 }
 
@@ -22,12 +25,16 @@ for (i = 0; i < 257; i++) {
 
 function clear() {
 
+    document.querySelectorAll(".allDivs").style.backgroundColor = 'white'
 
     var answer = prompt("How Many Squares Per Side?")
     var answerInt = parseInt(answer)
     
     if (answerInt <= 100 && answerInt > 0) {
         var finalInt = answerInt * answerInt
+        for (x = 0; x < finalInt; x++) {
+            create()
+        }
     }
     else {
         alert("Error, please enter a number between 1 and 100")
