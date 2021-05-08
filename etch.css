@@ -45,9 +45,9 @@ h1 {
     padding: 20px;
 }
 
- #secondary-container {
-    border: 40px red solid
-} 
+ /* #secondary-container {
+    
+}  */
 
 
 #main {
@@ -55,6 +55,8 @@ h1 {
     grid-template-rows: repeat(var(--repeat), auto);
     grid-template-columns: repeat(var(--repeat), 1fr);
     margin-bottom: 20px;
+    border: 40px red solid;
+    border-radius: 15px;
 }
 
 .allDivs {
