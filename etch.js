@@ -33,7 +33,7 @@ function create() {
         newDiv.setAttribute('style', 'border: 1px black solid; width: 100%; height: 0; padding-bottom: 100%; margin: 0') //overflow hidden if adding content
 
         newDiv.addEventListener('mouseenter', () => {
-            newDiv.style.backgroundColor = 'lightblue'
+            newDiv.style.backgroundColor = 'gray'
             // newDiv.style.setProperty("backgroundColor", color)
         })
 
@@ -96,7 +96,7 @@ function clear() {
             newDiv.setAttribute('style', 'border: 1px black solid; width: 100%; height: 0; padding-bottom: 100%; margin: 0') //overflow hidden if adding content
 
             newDiv.addEventListener('mouseenter', () => {
-                newDiv.style.backgroundColor = 'lightblue'
+                newDiv.style.backgroundColor = 'gray'
         })
 
         main.appendChild(newDiv)
