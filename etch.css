@@ -1,5 +1,6 @@
 :root {
     --repeat: 16;
+    --randomColor: rgb(0, 0, 0);
     background-color: lightblue;
 }
 
@@ -11,8 +12,7 @@ h1 {
 #main-container {
     display: grid;
     grid-template-areas: 'header header header'
-                         'button button button'
-                         'author main course'
+                         'author main button'
 }
 
 #head {
@@ -21,18 +21,12 @@ h1 {
     justify-content: center;
 }
 
-#author{
+#author {
     grid-area: author;
     display: flex;
     justify-content: center;
     align-self: center;
-}
-
-#course {
-    grid-area: course;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    font-family: 'Fredericka the Great', cursive, 'Press Start 2P', cursive;
 }
 
 #main-button {
@@ -45,22 +39,31 @@ h1 {
     padding: 20px;
 }
 
- /* #secondary-container {
-    
-}  */
-
+#button-clear {
+    padding: 10px;
+    color: white;
+    background-color: rgb(245, 168, 181);
+    box-shadow: 2px 1px inset;
+    border-radius: 20px 10px;
+    font-size: 15px;
+}
 
 #main {
     display: grid;
     grid-template-rows: repeat(var(--repeat), auto);
     grid-template-columns: repeat(var(--repeat), 1fr);
     margin-bottom: 20px;
-    border: 40px red solid;
+    border: 40px rgb(238, 72, 72) solid;
+    box-shadow: 5px 10px rgb(219, 64, 64);
     border-radius: 15px;
 }
 
 .allDivs {
     background-color: white;
+}
+
+.randomDivs {
+    background-color: var(--randomColor);
 }
 
 /* Ideas
